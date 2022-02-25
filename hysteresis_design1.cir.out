@@ -1,0 +1,67 @@
+*  Generated for: PrimeSim
+*  Design library name: SCHMITT_TTRIGGER1
+*  Design cell name: 1stDESIGN_IMPLEMENTATION
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Thu Feb 24 11:52:43 2022
+
+.global gnd!
+********************************************************************************
+* Library          : SCHMITT_TTRIGGER1
+* Cell             : 1stDESIGN
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _1stdesign gnd_1 vdd vin vout
+xm6 gnd_1 vout net28 net28 p105 w=0.78u l=30n nf=1 m=1
+xm9 net28 vin vout vout p105 w=0.6u l=0.03u nf=1 m=1
+xm0 vdd vin net28 net28 p105 w=0.6u l=30n nf=1 m=1
+xm5 vdd vout net23 net23 n105 w=0.675u l=0.03u nf=1 m=1
+xm4 net23 vin gnd_1 gnd_1 n105 w=0.3u l=0.03u nf=1 m=1
+xm3 vout vin net23 net23 n105 w=0.3u l=0.03u nf=1 m=1
+.ends _1stdesign
+
+********************************************************************************
+* Library          : SCHMITT_TTRIGGER1
+* Cell             : 1stDESIGN_IMPLEMENTATION
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 gnd! net8 vin vout _1stdesign
+v8 vin gnd! dc=0 sin ( 0.5 1 50 0 0 0 )
+v6 net8 gnd! dc=1
+
+
+
+
+
+
+
+
+.tran '1u' '200u' name=tran
+.dc V8 '0' '3' '.1' hysteresis=1 name=dc
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe dc v(vin) v(vout)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+
