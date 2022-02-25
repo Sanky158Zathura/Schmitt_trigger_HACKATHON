@@ -11,8 +11,9 @@ Keywords-PMOS NMOS CMOS highspeed
 
 1.**INTRODUCTION**
 Schmitt triggers made of CMOS have a wide application in both analog and digital technology. They are widely used to shape the signals. They convert irregular shaped signals to triangular or square pulse. Schmitt trigger are found useful to remove noise from signals and mechanical contact bounce in switches.
-Lately aggressive scaling of CMOS to nanometer have found application in various fields. Schmitt trigger works on the principle of comparator, when the input is greater  or lower than a chosen threshold the output switches.                   Schmitt trigger designed using OP-Amp and feedback resistors have high power losses and greater area consumption over the chip. While the CMOS technology benefits over both the drawbacks of conventional method.
-Schmitt trigger provides two switching thresholds one for positive-going and other for negative-going input signal,               but the comparator gives only one switching threshold. This feature of Schmitt trigger is called hysteresis. Various Schmitt triggers are compared for noise margin and noise stable from the hysteresis curve.
+Lately aggressive scaling of CMOS to nanometer have found application in various fields. Schmitt trigger works on the principle of comparator, when the input is greater  or lower than a chosen threshold the output switches. Schmitt trigger designed using OP-Amp and feedback resistors have high power losses and greater area consumption over the chip. While the CMOS technology benefits over both the drawbacks of conventional method.
+Schmitt trigger provides two switching thresholds one for positive-going and other for negative-going input signal,but the comparator gives only one switching threshold. This feature of Schmitt trigger is called hysteresis. Various Schmitt triggers are compared for noise margin and noise stable from the hysteresis curve.
+
 
 
 **2.Circuit Details**
@@ -23,6 +24,7 @@ Schmitt trigger provides two switching thresholds one for positive-going and oth
 
 
 
+
 **3.Circuit Design**
 
 ![image](https://user-images.githubusercontent.com/92454845/155769173-680e5be2-c827-4c7d-a269-8f511c969061.png)
@@ -30,6 +32,8 @@ CIRCUIT 1
 
 ![image](https://user-images.githubusercontent.com/92454845/155769262-8e83e089-864f-4c4b-a132-2b9a4282bc67.png)
 CIRCUIT 2
+
+
 
 **Transistor Dimensions**
 
@@ -49,6 +53,31 @@ N2	              280	    280
 
 N3	              630   	140
 
+
+
+
+**Simulation tool used**
+
+SYNOPSYS
+
+Synopsys is at the forefront of Smart Everything with the world's most advanced technologies for chip design, verification, IP integration, and software security and quality testing
+Synopsys is an American electronic design automation company that focuses on silicon design and verification, silicon intellectual property and software security and quality. Products include logic synthesis, behavioral synthesis, place and route, static timing analysis, formal verification, hardware description language (SystemC, SystemVerilog/Verilog, VHDL) simulators, and transistor-level circuit simulation. 
+
+![Screenshot 2022-02-25 001914](https://user-images.githubusercontent.com/92454845/155771264-cb82df72-b39c-4892-998a-1343de02d668.png)
+
+Synopsys custom compiler
+
+![info](https://user-images.githubusercontent.com/92454845/155771330-08392773-c4d5-495a-a1c0-ae9eb4b4c628.png)
+
+libraries available in Synopsys
+
+![Screenshot 2022-02-25 001938](https://user-images.githubusercontent.com/92454845/155771370-0e78a1e4-d590-4c23-8d25-3e7ec2edf369.png)
+
+![Screenshot 2022-02-25 001959](https://user-images.githubusercontent.com/92454845/155771377-a7770493-6f79-48ae-b95b-d7622476471e.png)
+
+
+
+
 **Simulation Implementation**
 
 Design of Circuit 1
@@ -65,7 +94,6 @@ Circuit 1 implementation
 
 
 
-
 Design for Circuit 2
 
 ![2 design](https://user-images.githubusercontent.com/92454845/155770059-e1d293f2-2c6f-4e57-b0cb-4e35c981d25a.png)
@@ -77,6 +105,9 @@ symbol for Circuit 2
 Circuit 2 implementation
 
 ![2 implementation](https://user-images.githubusercontent.com/92454845/155770169-1d981c5c-d026-4f39-8139-4d4c19d69b77.png)
+
+
+
 
 **Output Waveforms**
 
@@ -94,6 +125,8 @@ Waveform of Circuit 2
 hysteresis Curve
 
 ![1 hysteresis](https://user-images.githubusercontent.com/92454845/155770601-0b4ba9c5-51cb-4b1d-b7f9-43b1fd1be5c7.png)
+
+
 
 **References**
 
