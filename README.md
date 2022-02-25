@@ -43,15 +43,32 @@ Length = 28nm	Circuit 1	Circuit 2
               
 P1	              560    	560
 
-P2	              560	    560
+P2	              560	560
 
 P3	              728    	280
 
-N1	              280	    280
+N1	              280	280
 
-N2	              280	    280
+N2	              280	280
 
 N3	              630   	140
+
+
+Length = 30nm	Circuit 1	Circuit 2
+
+	            Width(nm)	Width(nm)
+              
+P1	              600    	600
+
+P2	              600	600
+
+P3	              780    	300
+
+N1	              300	300
+
+N2	              300	300
+
+N3	              675   	150
 
 
 
