@@ -94,3 +94,10 @@ Waveform of Circuit 2
 hysteresis Curve
 
 ![1 hysteresis](https://user-images.githubusercontent.com/92454845/155770601-0b4ba9c5-51cb-4b1d-b7f9-43b1fd1be5c7.png)
+
+**References**
+
+1. http://web.mit.edu/Magic/Public/papers/00260219.pdf
+2. R. Sapawi, R. L. S. Chee, S. K. Sahari and N. Julai, "Performance of CMOS Schmitt Trigger," 2008 International Conference on Computer and Communication Engineering, 2008, pp. 1317-1320, doi: 10.1109/ICCCE.2008.4580818.
+3. W. Ibrahim, V. Beiu, M. Tache and F. Kharbash, "On Schmitt trigger and other inverters," 2013 IEEE 20th International Conference on Electronics, Circuits, and Systems (ICECS), 2013, pp. 29-32, doi: 10.1109/ICECS.2013.6815337.
+4. https://ieeexplore.ieee.org/document/87026
