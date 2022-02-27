@@ -100,10 +100,13 @@ libraries available in Synopsys
 Design of Circuit 1
 
 ![1 design](https://user-images.githubusercontent.com/92454845/155769910-368e153e-fbca-457a-9af7-6e37b3a2a605.png)
+This is design of Schmitt trigger 1 It consists of 6 Mosfets with tags for Vin Vout Vdd and GND. The 
+Ciruit acts as skeleton for the Symbol.
 
 Symbol for Circuit 1
 
 ![1 symbol](https://user-images.githubusercontent.com/92454845/155769870-dc20209f-e112-4bce-a567-3f68ef2fd517.png)
+
 
 Circuit 1 implementation
 
@@ -114,6 +117,7 @@ Circuit 1 implementation
 Design for Circuit 2
 
 ![2 design](https://user-images.githubusercontent.com/92454845/155770059-e1d293f2-2c6f-4e57-b0cb-4e35c981d25a.png)
+This Circuit is design of Schmitt trigger 2 Constructed using 6 mosfets with appropriative tags for input, output, ground and threshold voltages.
 
 symbol for Circuit 2
 
@@ -134,15 +138,29 @@ Waveform of Circuit 1
 
 ![output1](https://user-images.githubusercontent.com/92454845/155770527-00fabaf0-82fd-4ed8-b7dd-7d165e142978.png)
 
+These waveforms corresponds to Circuit 1. The input provided is 2V peak to peak, frequency 50Hz and DC offset voltage of 0.5V. The output waveform obtained matches the pulse wave with amplitude 1V.It is plotted for transient analysis.
+
 
 Waveform of Circuit 2
 
 ![2 op](https://user-images.githubusercontent.com/92454845/155770556-f7dacfdd-464a-48c6-bdca-51ec630948ca.png)
 
+The waveform corresponds to The waveforms of circuit 2. . The input provided is 2V peak to peak, frequency 50Hz and DC offset voltage of 0.5V. Output of which is a pulse wave of aplitude 1V. Plotted for transient analysis.
+
 hysteresis Curve
 
 ![1 hysteresis](https://user-images.githubusercontent.com/92454845/155770601-0b4ba9c5-51cb-4b1d-b7f9-43b1fd1be5c7.png)
 
+This is plot of hysteresis Curve. Plotted using DC analysis by varying Vin linearly and plotting Vout. This plot corresponds to Vsat Vh and hysteresis loss during it's operation.
+
+
+#**Acknowledgements**
+1)Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
+2)Synopsys Inc
+3)IIT Hyderabad
+4)Analog IC Design Hackathon
+5)Sameer Durgoji, NIT Karnataka
+6)Chinmay Panda, IIT Hyderabad
 
 
 **References**
