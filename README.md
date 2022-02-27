@@ -154,7 +154,7 @@ hysteresis Curve
 This is plot of hysteresis Curve. Plotted using DC analysis by varying Vin linearly and plotting Vout. This plot corresponds to Vsat Vh and hysteresis loss during it's operation.
 
 
-#**Acknowledgements**
+'#'**Acknowledgements**
 1)Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 2)Synopsys Inc
 3)IIT Hyderabad
