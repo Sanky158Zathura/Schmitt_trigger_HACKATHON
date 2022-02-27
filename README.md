@@ -5,27 +5,29 @@ RV College of Engineering(Bangalore)
 
 
 
-**Abstract**-The Scope of the work is to design 2 Schmitt trigger using 28nm CMOS technology with relatively lower power consumption and low area. The proposed Schmitt triggers works for low voltage and has an intended use over high-speed applications. It is designed using 3 PMOS and 3 NMOS. 
+# Abstract-The Scope of the work is to design 2 Schmitt trigger using 28nm CMOS technology with relatively lower power consumption and low area. The proposed Schmitt triggers works for low voltage and has an intended use over high-speed applications. It is designed using 3 PMOS and 3 NMOS. 
 Keywords-PMOS NMOS CMOS highspeed  
 
 
-1.**INTRODUCTION**
+# 1.INTRODUCTION
 Schmitt triggers made of CMOS have a wide application in both analog and digital technology. They are widely used to shape the signals. They convert irregular shaped signals to triangular or square pulse. Schmitt trigger are found useful to remove noise from signals and mechanical contact bounce in switches.
 Lately aggressive scaling of CMOS to nanometer have found application in various fields. Schmitt trigger works on the principle of comparator, when the input is greater  or lower than a chosen threshold the output switches. Schmitt trigger designed using OP-Amp and feedback resistors have high power losses and greater area consumption over the chip. While the CMOS technology benefits over both the drawbacks of conventional method.
 Schmitt trigger provides two switching thresholds one for positive-going and other for negative-going input signal,but the comparator gives only one switching threshold. This feature of Schmitt trigger is called hysteresis. Various Schmitt triggers are compared for noise margin and noise stable from the hysteresis curve.
 
 
 
-**2.Circuit Details**
+# 2.Circuit Details
 
-**1.Circuit 1** - Consider Vout = 0 and Vin <=Vdd at this state P3 is on and there is path to ground for Node A. When Vin changes from Vdd to 0 and Vout changes from 0 to Vdd, the output is compromised because current has a alternative path to ground through P3 till Vout raises such that P3 goes to off condition. So there is a slight variation in waveform from the ideal waveform when plotted for high frequency input voltage. Considering the other case When Vout = Vdd and Vin >= Vdd at this stage N3 is on and there is path to Vdd for  node B. . When Vout changes from Vdd to 0 and Vin changes from 0 to Vdd, the output is compromised because current has a alternative path to Vdd through N3 till Vout decreases such that N3 goes to off condition.
+### 1.Circuit 1 -
+Consider Vout = 0 and Vin <=Vdd at this state P3 is on and there is path to ground for Node A. When Vin changes from Vdd to 0 and Vout changes from 0 to Vdd, the output is compromised because current has a alternative path to ground through P3 till Vout raises such that P3 goes to off condition. So there is a slight variation in waveform from the ideal waveform when plotted for high frequency input voltage. Considering the other case When Vout = Vdd and Vin >= Vdd at this stage N3 is on and there is path to Vdd for  node B. . When Vout changes from Vdd to 0 and Vin changes from 0 to Vdd, the output is compromised because current has a alternative path to Vdd through N3 till Vout decreases such that N3 goes to off condition.
 
-**2. Circuit 2** - Assuming Vin is low and Vout is low, So N1,N3 are in cutoff region and similarly P1,P3 are in saturation region. For Vin to change from low to high, N1 turns on slowly, the voltage at node B decrease, and vout increase slowly. Since the voltage Vp can be changed, so this acts as threshold voltage for positive form of the output and similarly Vn acts as threshold voltage for negative part of the output. Circuit 2 dominates Circuit 1  for having 2 threshold voltages.
+### 2. Circuit 2 - 
+Assuming Vin is low and Vout is low, So N1,N3 are in cutoff region and similarly P1,P3 are in saturation region. For Vin to change from low to high, N1 turns on slowly, the voltage at node B decrease, and vout increase slowly. Since the voltage Vp can be changed, so this acts as threshold voltage for positive form of the output and similarly Vn acts as threshold voltage for negative part of the output. Circuit 2 dominates Circuit 1  for having 2 threshold voltages.
 
 
 
 
-**3.Circuit Design**
+# 3.Circuit Design
 
 ![image](https://user-images.githubusercontent.com/92454845/155769173-680e5be2-c827-4c7d-a269-8f511c969061.png)
 CIRCUIT 1
@@ -35,7 +37,7 @@ CIRCUIT 2
 
 
 
-**Transistor Dimensions**
+# Transistor Dimensions
 
 Length = 28nm	Circuit 1	Circuit 2
 
@@ -73,7 +75,7 @@ N3	              675   	150
 
 
 
-**Simulation tool used**
+# Simulation tool used
 
 SYNOPSYS
 
@@ -95,7 +97,7 @@ libraries available in Synopsys
 
 
 
-**Simulation Implementation**
+# Simulation Implementation
 
 Design of Circuit 1
 
@@ -130,7 +132,7 @@ Circuit 2 implementation
 
 
 
-**Output Waveforms**
+# Output Waveforms
 
 Waveform of Circuit 1
 
@@ -154,7 +156,7 @@ hysteresis Curve
 This is plot of hysteresis Curve. Plotted using DC analysis by varying Vin linearly and plotting Vout. This plot corresponds to Vsat Vh and hysteresis loss during it's operation.
 
 
-'#'**Acknowledgements**
+# Acknowledgements
 1)Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
 2)Synopsys Inc
 3)IIT Hyderabad
@@ -163,7 +165,7 @@ This is plot of hysteresis Curve. Plotted using DC analysis by varying Vin linea
 6)Chinmay Panda, IIT Hyderabad
 
 
-**References**
+# References
 
 1. http://web.mit.edu/Magic/Public/papers/00260219.pdf
 2. R. Sapawi, R. L. S. Chee, S. K. Sahari and N. Julai, "Performance of CMOS Schmitt Trigger," 2008 International Conference on Computer and Communication Engineering, 2008, pp. 1317-1320, doi: 10.1109/ICCCE.2008.4580818.
