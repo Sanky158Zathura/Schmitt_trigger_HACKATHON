@@ -1,8 +1,8 @@
 # Schmitt Trigger in 28nm CMOS Technology
 ### Sanket M Mantrashetti
 ### RV College of Engineering(Bangalore)
+---
 
-=====
 
 # Abstract-
 The Scope of the work is to design 2 Schmitt trigger using 28nm CMOS technology with relatively lower power consumption and low area. The proposed Schmitt triggers works for low voltage and has an intended use over high-speed applications. It is designed using 3 PMOS and 3 NMOS. 
